@@ -53,7 +53,7 @@ a:hover {
     width: 100%;
     min-height: 460px;
     margin: auto;
-    /* box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.6); */
+    box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.6);
     background: #dddbdc;
     border-radius: 12px;
     max-width: 700px;
@@ -143,6 +143,9 @@ a:hover {
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
 }
+.links .link span {
+    padding-top: 1px;
+}
 .links .link div {
     display: flex;
     flex-direction: column;
@@ -168,7 +171,10 @@ a:hover {
 }
 @media (max-width: 768px) {
     .links {
-        padding: 0;
+        padding: 20px 20px 0;
         grid-template-columns: 1fr;
+    }
+    .social-media {
+        padding: 0 20px 30px;
     }
 }
